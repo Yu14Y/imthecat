@@ -10,7 +10,23 @@
     <div class="centered-container">
         <img src="/src/cat.png" alt="Centered Image">
     </div>
-
+    <button onclick="playBoth()">Play Music</button>
+    <audio id="audio1" loop>
+        <source src="/cat.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audio2" loop>
+        <source src="/lofi.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        function playBoth() {
+            const audio1 = document.getElementById('audio1');
+            const audio2 = document.getElementById('audio2');
+            
+            audio1.play();
+            audio2.play();
+        }
+        </script>
+    
     <div class="vh-container">
         <h1> imthecat1892<br></h1>
 
@@ -21,13 +37,6 @@
     </div>
 
 
-    <audio id="background-music" autoplay loop>
-        <source src="/src/cat.mp3" type="audio/mpeg">
-    </audio>
-    <script>
-        const audio = document.getElementById('background-music');
-    </script>
-    
 </body>
 </html>
 
