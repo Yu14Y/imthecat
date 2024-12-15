@@ -44,7 +44,11 @@ body {
     font-size: 50px;
 }
 
-.vh-container p h6{
+.vh-container p{
+    text-align: center;
+}
+
+.vh-container h6{ 
     text-align: center;
 }
 
